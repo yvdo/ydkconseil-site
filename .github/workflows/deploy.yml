@@ -1,0 +1,50 @@
+name: Déploiement IONOS
+
+# Envoie le dossier public/ sur l'hébergement IONOS à chaque push sur main.
+# Lancement manuel possible depuis l'onglet Actions (« Run workflow »).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "public/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-ionos
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Envoyer le site par SFTP
+        env:
+          SFTP_HOST: ${{ secrets.IONOS_SFTP_HOST }}
+          SFTP_USER: ${{ secrets.IONOS_SFTP_USER }}
+          LFTP_PASSWORD: ${{ secrets.IONOS_SFTP_PASSWORD }}
+          SFTP_DIR: ${{ vars.IONOS_SFTP_DIR || '/' }}
+        run: |
+          if [ -z "$SFTP_HOST" ] || [ -z "$SFTP_USER" ] || [ -z "$LFTP_PASSWORD" ]; then
+            echo "::error::Secrets IONOS_SFTP_HOST, IONOS_SFTP_USER et IONOS_SFTP_PASSWORD manquants (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+          lftp -u "$SFTP_USER" --env-password "sftp://$SFTP_HOST" -e "
+            set sftp:auto-confirm yes;
+            set net:max-retries 3;
+            set net:timeout 30;
+            mirror --reverse --verbose --parallel=4 --exclude-glob .DS_Store public/ $SFTP_DIR;
+            bye"
+
+      - name: Vérifier le site en ligne
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" https://ydkconseil.com/assets/css/style.css)
+          echo "style.css → HTTP $code"
+          test "$code" = "200"
