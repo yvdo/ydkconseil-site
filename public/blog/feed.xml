@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Blog YDK Conseil</title>
+  <link>https://ydkconseil.com/blog/</link>
+  <description>Product management, conversion e-commerce et génération de leads.</description>
+  <language>fr-FR</language>
+  <item>
+    <title>Product Manager freelance : rôle, missions et quand faire appel à un PM externe</title>
+    <link>https://ydkconseil.com/blog/product-manager-freelance/</link>
+    <guid>https://ydkconseil.com/blog/product-manager-freelance/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0100</pubDate>
+    <description>Ce que fait vraiment un Product Manager freelance, les situations où il apporte le plus de valeur, et les clés pour que la mission réussisse dès les premières semaines.</description>
+  </item>
+  <item>
+    <title>Product Owner vs Product Manager : les vraies différences, par quelqu&#x27;un qui a été les deux</title>
+    <link>https://ydkconseil.com/blog/product-owner-vs-product-manager/</link>
+    <guid>https://ydkconseil.com/blog/product-owner-vs-product-manager/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0100</pubDate>
+    <description>J&#x27;ai été Product Owner pendant deux ans avant de devenir Product Manager. Voici ce qui change réellement entre les deux rôles, au-delà des définitions théoriques.</description>
+  </item>
+  <item>
+    <title>Améliorer le taux de conversion d&#x27;un site e-commerce : la méthode produit en 7 étapes</title>
+    <link>https://ydkconseil.com/blog/ameliorer-taux-de-conversion-e-commerce/</link>
+    <guid>https://ydkconseil.com/blog/ameliorer-taux-de-conversion-e-commerce/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0100</pubDate>
+    <description>Les « astuces » de conversion ne marchent que par hasard. Voici la méthode produit que j&#x27;applique pour faire progresser durablement le taux de conversion d&#x27;un site e-commerce.</description>
+  </item>
+  <item>
+    <title>Prioriser son backlog produit : RICE, MoSCoW, impact / effort… quelle méthode choisir ?</title>
+    <link>https://ydkconseil.com/blog/priorisation-backlog-rice-moscow/</link>
+    <guid>https://ydkconseil.com/blog/priorisation-backlog-rice-moscow/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0100</pubDate>
+    <description>Quand tout est urgent, rien n&#x27;est prioritaire. Tour d&#x27;horizon des méthodes de priorisation produit, et surtout de la façon de les utiliser pour arbitrer sereinement.</description>
+  </item>
+  <item>
+    <title>Product discovery : valider une idée avant de la développer</title>
+    <link>https://ydkconseil.com/blog/product-discovery-valider-une-idee/</link>
+    <guid>https://ydkconseil.com/blog/product-discovery-valider-une-idee/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0100</pubDate>
+    <description>Développer coûte cher, se tromper de cible coûte encore plus. La product discovery permet de vérifier qu&#x27;une idée répond à un vrai besoin avant d&#x27;écrire la première ligne de code.</description>
+  </item>
+  <item>
+    <title>Génération de leads B2B : faire de son site web une machine à leads qualifiés</title>
+    <link>https://ydkconseil.com/blog/generation-de-leads-b2b-site-web/</link>
+    <guid>https://ydkconseil.com/blog/generation-de-leads-b2b-site-web/</guid>
+    <pubDate>Mon, 02 Nov 2026 08:00:00 +0100</pubDate>
+    <description>Beaucoup de sites B2B ont du trafic mais peu de demandes. Voici comment travailler le positionnement, les parcours et les formulaires pour transformer les visiteurs en leads qualifiés.</description>
+  </item>
+</channel>
+</rss>

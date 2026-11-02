@@ -54,3 +54,14 @@ Après une modification de `style.css` ou `main.js`, augmentez le numéro de ver
 - Soumettre `https://ydkconseil.com/sitemap.xml` dans Google Search Console.
 - Mettre à jour `<lastmod>` dans `sitemap.xml` après un changement de contenu important.
 - Tester les données structurées : https://search.google.com/test/rich-results
+
+## Blog
+
+Les articles sont rédigés dans `content/blog/*.html` : un commentaire JSON en tête (titre, description SEO, catégorie, date, mots-clés, articles liés), puis le corps en HTML avec des `<h2>` pour les sections.
+
+Pour publier un nouvel article :
+
+1. Créer `content/blog/mon-article.html` sur le modèle d'un article existant.
+2. Lancer `python3 tools/build_blog.py`.
+3. Le script génère `public/blog/<slug>/index.html`, la page `/blog/`, le flux RSS, le `sitemap.xml` et le bloc « Derniers articles » de la page d'accueil.
+4. Commit + push : le déploiement met tout en ligne.

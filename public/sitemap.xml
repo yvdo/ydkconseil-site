@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ydkconseil.com/</loc>
     <lastmod>2026-11-02</lastmod>
-    <image:image>
-      <image:loc>https://ydkconseil.com/assets/img/yves-donatien-kadjo-product-manager-freelance-960.jpg</image:loc>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://ydkconseil.com/blog/</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://ydkconseil.com/blog/product-manager-freelance/</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://ydkconseil.com/blog/product-owner-vs-product-manager/</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://ydkconseil.com/blog/ameliorer-taux-de-conversion-e-commerce/</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://ydkconseil.com/blog/priorisation-backlog-rice-moscow/</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://ydkconseil.com/blog/product-discovery-valider-une-idee/</loc>
+    <lastmod>2026-11-02</lastmod>
+  </url>
+  <url>
+    <loc>https://ydkconseil.com/blog/generation-de-leads-b2b-site-web/</loc>
+    <lastmod>2026-11-02</lastmod>
   </url>
   <url>
     <loc>https://ydkconseil.com/mentions-legales.html</loc>
